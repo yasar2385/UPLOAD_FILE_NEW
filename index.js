@@ -4,9 +4,6 @@ import './style.css';
 // Write Javascript code!
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
-window.addEventListener('DOMContentLoaded', () => {
-  const upload = new UploadModal('#upload');
-});
 
 class UploadModal {
   filename = '';
@@ -156,3 +153,7 @@ class Utils {
     return Math.round(min + relativeValue);
   }
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+  const upload = new UploadModal('#upload');
+});
